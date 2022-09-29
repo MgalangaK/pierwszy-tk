@@ -12,12 +12,16 @@ lb2=Label()
 lb2.config(text="label 2 :)")
 lb2.pack()
 
+def change_label2_on_click():
+    lb2.config(text=entry.get())
 
 btn = Button()
-btn.config(text="przycisk")
+btn.config(text="przycisk", command=change_label2_on_click)
 btn.pack()
 
 entry = Entry()
 entry.pack()
+
+
 
 root.mainloop()
