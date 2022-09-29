@@ -1,4 +1,4 @@
-from tkinter import Tk,Label,Button
+from tkinter import Tk,Label,Button, Entry
 
 root = Tk()
 root.minsize(250,250)
@@ -16,5 +16,8 @@ lb2.pack()
 btn = Button()
 btn.config(text="przycisk")
 btn.pack()
+
+entry = Entry()
+entry.pack()
 
 root.mainloop()
