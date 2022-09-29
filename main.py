@@ -13,11 +13,8 @@ lb2=Label()
 lb2.config(text="label 2 :)")
 lb2.grid(column=0, row=2)
 
-def change_label2_on_click():
-    lb2.config(text=entry.get())
-
 btn = Button()
-btn.config(text="przycisk", command=change_label2_on_click)
+btn.config(text="przycisk", command=lambda: lb2.config(text=entry.get()))
 btn.grid(column=0, row=3)
 btn.config(padx=40,pady=40)
 
