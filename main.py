@@ -21,6 +21,17 @@ btn.config(text="przycisk", command=change_label2_on_click)
 btn.grid(column=0, row=3)
 btn.config(padx=40,pady=40)
 
+def get_smaller_on_click():
+    btn2["padx"] -=5
+    btn2["pady"] -=5
+    
+    
+
+btn2 = Button()
+btn2.config(text="zmniejsze sie na kliknięcie", command=get_smaller_on_click)
+btn2.grid(column=0, row=10)
+btn2.config(padx=40,pady=40)
+
 entry = Entry()
 entry.grid(column=0, row=4, columnspan=2)
 
